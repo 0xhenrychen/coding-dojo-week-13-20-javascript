@@ -5,8 +5,6 @@ const PersonCard = (props) => {
 
     const handleClick = () => {setAge({clickCount: age.clickCount + 1});
     }
-    
-    
     return (
         <div>
             <h1>{props.lastName}, {props.firstName}</h1>
