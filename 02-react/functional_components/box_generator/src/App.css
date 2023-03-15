@@ -1,5 +1,19 @@
 .App {
   text-align: center;
+  margin: 20px;
+}
+
+.coloredBoxes {
+    display: flex;
+}
+
+.coloredEachBox {
+    height: 100px;
+    width: 100px;
+    margin: 10px;
+    color: white;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .App-logo {
