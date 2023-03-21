@@ -4,12 +4,20 @@ import './AddToDo.css';
 const AddToDo = (props) => {
     const {toDoList, setToDoList} = props;
 
-    const [toDo, setToDo] = useState("No ToDo Items Yet");
+    // const [toDo, setToDo] = useState("No ToDo Items Yet");
+    const [toDo, setToDo] = useState({
+        id: null
+    });
 
     const submitHandler = (e) => {
         e.preventDefault();
-        setToDoList([...toDoList, toDo]);
-        console.log(toDoList);
+        let id = crypto.randomUUID();
+        console.log(id);
+        let newToDo = {...toDo, id: id};
+        setToDoList([...toDoList, newToDo]);
+        setToDo({
+            toDo
+        })
     }
     return (
         <div>
