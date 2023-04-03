@@ -1,0 +1,19 @@
+Pokemon: Pikachu
+URL: https://pokeapi.co/api/v2/pokemon/pikachu
+Results: too long (11K+ lines of code)
+
+Pokemon: Mew
+URL: https://pokeapi.co/api/v2/pokemon/mew
+Results: too long (11K+ lines of code)
+
+Pokemon: Charmander
+URL: https://pokeapi.co/api/v2/pokemon/charmander
+Results: too long (11K+ lines of code)
+
+Pokemon: Squirtle
+URL: https://pokeapi.co/api/v2/pokemon/squirtle
+Results: too long (11K+ lines of code)
+
+Pokemon: Eevee
+URL: https://pokeapi.co/api/v2/pokemon/eevee
+Results: too long (11K+ lines of code)
