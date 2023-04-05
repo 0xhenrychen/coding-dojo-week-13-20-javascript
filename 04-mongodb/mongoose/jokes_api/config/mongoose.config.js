@@ -1,6 +1,8 @@
+// Importing the mongoose package.
 const mongoose = require('mongoose');
  
-mongoose.connect('mongodb://127.0.0.1:27017/name_of_your_DB', {
+// Run the mongoose.connect method and connect to the database (only need to change the db name).
+mongoose.connect('mongodb://127.0.0.1:27017/jokesDB', {
     useNewUrlParser: true,
     useUnifiedTopology: true
 })
