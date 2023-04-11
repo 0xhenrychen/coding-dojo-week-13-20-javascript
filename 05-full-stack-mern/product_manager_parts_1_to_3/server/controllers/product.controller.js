@@ -8,8 +8,8 @@ module.exports.index = (request, response) => {  //We are exporting a key:val pa
 
 module.exports.findAllProducts = (req, res) => {
     Product.find()
-        .then((allDaUsers) => {
-            res.json({ users: allDaUsers })
+        .then((allProducts) => {
+            res.json({ item: allProducts })
         })
         .catch((err) => {
             res.json({ message: 'Something went wrong', error: err })
@@ -24,3 +24,16 @@ module.exports.createProduct = (request, response) => {
         .then(product => response.json(product))
         .catch(err => response.json(err));
 }
+
+module.exports.getProduct = (request, response) => {
+    Product.findOne({_id:request.params.id})
+    .then((product) => response.json(product))
+    .catch(err => response.json(err));
+}
+
+module.exports.deleteProduct = (request, response) => {
+    Product.deleteOne({ _id: request.params.id }) //note: "id" here MUST match id in corresponding route
+        .then(deleteConfirmation => response.json(deleteConfirmation))
+        .catch(err => response.json(err))
+}
+
