@@ -1,0 +1,56 @@
+.App {
+  margin: 10px;
+}
+
+.show-border {
+  border: 1px solid black;
+  padding: 5px;
+  margin: 5px;
+  background-color: beige;
+}
+
+.links {
+  text-decoration: none;
+  color: red;
+}
+
+.links a:hover {
+  color: blue;
+}
+
+label {
+  margin-top: 20px;
+}
+
+.nav-flex {
+  display: flex;
+  justify-content: space-between;
+}
+
+.details-flex {
+  display: flex;
+  border: 1px solid black;
+  margin-top: 20px;
+}
+
+.create-flex {
+  display: flex;
+  margin-top: 20px;
+  justify-content: space-evenly;
+}
+
+.details-col, .create-col {
+  margin: 20px;
+}
+
+.details-text {
+  font-weight: bold;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.btn-primary {
+  margin-top: 10px;
+}
